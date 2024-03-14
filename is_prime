@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	unsigned int m,n;
+	printf("please input the number:\n");
+	scanf_s("%d", &m);
+	for (n = 2; n <sqrt(m); n++)
+	{
+		if (m % n == 0)
+		{
+			printf("not prime");
+			break;
+		}
+	
+	}
+	if(n>=sqrt(m))
+	  printf("素数");
+	return 0;
