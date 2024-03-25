@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+int main()
+{
+	char c;
+	
+	int number = 0;
+	int letter = 0;
+	int space = 0;
+	int other = 0;
+	c = getchar();
+	while(c!='\n')
+	{ 
+		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		{
+			letter++;
+		}
+
+		else if (c >= '0' && c <= '9')
+		{
+			number++;
+		}
+		else if (c == '\n')
+		{
+			space++;
+		}
+		else
+		{
+			other++;
+		}
+		c = getchar();
+	}
+	
+	printf("letter=%d\n", letter);
+	printf("number=%d\n", number);
+	printf("space=%d\n", space);
+	printf("other=%d\n", other);
+	return 0;
+}
