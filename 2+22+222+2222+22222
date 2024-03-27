@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+	int n = 1;
+	int a = 2;
+	int t = a;
+	int sum =a;
+
+	for (n = 1; n < 6; n++)
+	{
+	
+		a *= 10;
+		a += t;
+		sum += a ;
+		printf("%d\n", a);
+
+	}
+    printf("sum=%d\n", sum);
+	return 0;
+}
