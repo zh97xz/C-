@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+int Compnum(int m)
+{
+	int n = 0;
+	int sum = 0;
+    for (n = 1; n < m; n++)
+		{
+			if (m % n == 0)
+			{
+				sum += n;
+			}
+
+		}
+	if (m == sum)
+		{
+			return 1;
+		}
+	else
+	{
+		return 0;
+	}
+}
+
+int main()
+{
+	int Compnum(int m);
+	int m ;
+
+	for (m = 1; m < 1000; m++)
+	{
+		if (Compnum(m))
+		{
+			printf("%d\n", m);
+		}
+	}
+
+	return 0;
+}
