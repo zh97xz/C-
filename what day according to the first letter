@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main()
+{
+	char c;
+	c=getchar();
+	getchar();
+	
+	switch (c)
+	{
+	case'm':
+		printf("monday");
+		break;
+	case't':
+		printf("please input the next letter:\n");
+		char j;
+		j = getchar();
+		switch (j)
+		{
+		case'u':
+			printf("tuesday");
+			break;
+		case'h':
+			printf("thursday");
+			break;
+		}
+	default:
+		break;
+	}
+
+
+	return 0;
+
+}
