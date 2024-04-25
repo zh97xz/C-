@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	char str[] = "nnnvoaiehnndfldva";
+	char s = 'n';
+	printf("%s\n", str);
+	int i = 0;
+	int j = 0;
+	{
+		for (i = 0; i < strlen(str); i++)
+		{
+			while(str[i]== s)
+			{
+				for (int j = i; j < strlen(str);j++)
+				{
+
+					str[j] = str[j + 1];
+				}
+
+			}
+
+		}
+
+	}
+	printf("%s", str);
+	return 0;
+}
