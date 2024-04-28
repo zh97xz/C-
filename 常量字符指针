@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main()
+{
+	
+	const char * p1 = "abcdef";
+	const char* p2 = "abcdef";
+	if (p1 == p2)
+	{
+		printf("地址相同");
+	}
+	else
+	{
+		printf("地址不同");
+	}
+
+	return 0;
+}
