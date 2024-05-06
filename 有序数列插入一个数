@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+int main()
+{
+	int a[5] = { 3,16,22,26 };
+	int i = 0;
+	int sz = sizeof(a) / sizeof(0);
+
+	int j=18;
+	for (i = 0; i < sz; i++)
+	{
+		if (j > a[i])
+		{
+			a[4] = j;
+			continue;
+		}
+		else
+		{
+		int m;
+		for (m = 3; m >=i; m--)
+				{
+					a[m + 1] = a[m];
+
+				}	
+		a[m+1] = j;
+		break;
+		}
+		
+	}
+
+	for (i = 0; i < sz; i++)
+	{
+		printf("%4d", a[i]);
+
+	}
+
+	return 0;
+}
