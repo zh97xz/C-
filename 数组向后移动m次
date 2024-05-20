@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+{
+	int a[10] = { 1,2,3,4,5,6,7,8,9,10};
+	int n = sizeof(a) / sizeof(0);
+	int* p;
+	int m ;
+	printf("请输入移动次数：");
+	scanf_s("%d", &m);
+	printf("m=%d\n", m);
+	for (int i = 0; i < m; i++)
+	{
+	int* p = a + n - 1;
+	int temp = *p;
+	while (p > a)
+	{
+		*p = *(p - 1);
+		p--;
+	}
+	*p = temp;
+	}
+
+	for (p =a; p <a+ n;p++)
+	{
+		printf("%-4d", *p);
+	}
+
+	return 0;
+}
