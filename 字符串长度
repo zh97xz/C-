@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int my_length(char* p)
+{
+	
+	int count = 0;
+	while (*p != '\0')
+	{
+		count++;
+		p++;
+	}
+	return count;
+}
+
+
+int main()
+{
+	int my_length(char* p);
+	char a[] = "abcdefg";
+	char* p;
+	p = a;
+	printf("%d", my_length(a));
+
+	return 0;
+}
