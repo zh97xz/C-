@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include<stdio.h>
+#include"string.h"
+
+void reverse(char* str)
+{
+	int len = strlen(str);
+
+	for (int i=0;i<(len-1)/2;i++)
+	{
+		char tmp =str[i];
+		str[i] = str[len - i- 1];
+        str[len - i -1]=tmp;
+	}
+
+
+}
+
+int main()
+{
+	void reverse(char* str);
+	char arr[256]= "abcdefg";
+	
+	reverse(arr);
+	printf("%s\n", arr);
+	return 0;
+}
