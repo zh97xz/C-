@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include"string.h"
+
+void left_move(char* a, int k)
+{
+	int len = strlen(a);
+	for (int i = 0; i < k; i++)
+	{
+		char tmp = *a;
+		for (int j = 0; j < len-1; j++)
+		{
+			a[j] = a[j + 1];
+		}
+		a[len-1] = tmp;
+	}
+}
+
+
+int main()
+{
+	char arr[] = "abcdefg";
+	void left_move(char* a, int k);
+	left_move(arr,2);
+	printf("%s\n", arr);
+	return 0;
+}
