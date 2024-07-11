@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include"string.h"
+#include"assert.h"
+
+void reverse(char* left,char* right)
+{
+	while (left < right)
+	{
+		char tmp = *left;
+		*left = *right;
+		*right = tmp;
+		left++;
+		right--;
+	}
+	
+
+}
+
+void left_move(char* arr, int k)
+{
+	assert(arr);
+	void reverse(char* left, char* right);
+	int len = strlen(arr);
+	reverse(arr, arr + k - 1);
+	reverse(arr + k, arr + len - 1);
+	reverse(arr, arr + len - 1);
+}
+
+int main()
+{
+	void left_move(char* arr, int k);
+	char arr[] = "abcdefg";
+	left_move(arr, 4);
+	printf("%s\n", arr);
+	return 0;
+}
