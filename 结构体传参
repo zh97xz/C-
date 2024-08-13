@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+struct S
+{
+	int a;
+	char c;
+	double d;
+};
+
+void INIT(struct S* ps)
+{
+	ps->a = 100;
+	ps->c = 'c';
+	ps->d = 3.1415;
+}
+
+void print1(struct S tmp)
+{
+	printf("%d %c %lf\n", tmp.a, tmp.c, tmp.d);
+}
+
+void print2(struct S* tmp)
+{
+	printf("%d %c %lf\n", tmp->a, tmp->c, tmp->d);
+
+}
