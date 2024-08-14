@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int check_sys(int i)
+{
+	i = 1;
+	return *(char*)&i;
+}
+
+int main()
+{
+	int i=1;
+	int ret = check_sys(i);
+	if (1 == ret)
+		printf("小端");
+	else
+		printf("大端");
+	return 0;
+}
