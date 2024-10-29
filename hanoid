@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+void Movedish(int num, char a, char b, char c)
+{
+	if (num== 1)
+	{
+		printf("%c->%c\n", a, c);
+	 }
+	else
+	{
+		Movedish(num-1, a, c, b);
+		printf("%c->%c\n", a, c);
+		Movedish(num - 1, b, a, c);
+	}
+
+}
+
+
+int main()
+{
+	void Movedish(int num, char a, char b, char c);
+
+
+	char a = 'A';
+	char b = 'B';
+	char c = 'C';
+
+	int num = 3;
+	Movedish(num, a, b, c);
+	
+	return 0;
+}
